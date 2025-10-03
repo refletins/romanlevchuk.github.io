@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Роман Левчук — Портфоліо</title>
+  <style>
+    body{font-family:Inter,Arial,sans-serif;margin:0;background:#f3f6f9;color:#0b1220;padding:30px}
+    .wrap{max-width:900px;margin:40px auto;background:#fff;padding:26px;border-radius:10px;box-shadow:0 6px 18px rgba(11,15,20,.06)}
+    h1{margin:0 0 8px;font-size:26px}
+    p{margin:0 0 12px;line-height:1.5}
+    a{color:#0b66a3;text-decoration:none}
+    .links a{margin-right:14px}
+    section{margin-top:18px}
+  </style>
+</head>
+<body>
+  <div id="content" style="display:none;">
+    <div class="wrap">
+      <h1>Привіт — я Роман Левчук</h1>
+      <p>IT / Network / Security — Windows & Linux, VPN, Cisco, Mikrotik, Fortigate. Нижче — контакти й проєкти.</p>
+
+      <section>
+        <h3>Посилання</h3>
+        <p class="links">
+          <a href="https://www.linkedin.com/in/roman-levchuk-394498378" target="_blank">LinkedIn</a>
+          <a href="https://github.com/refletins" target="_blank">GitHub</a>
+          <a href="mailto:romanlevchuk2015@gmail.com">Email</a>
+        </p>
+      </section>
+
+      <section>
+        <h3>Проєкти</h3>
+        <ul>
+          <li>Проєкт A — короткий опис</li>
+          <li>Проєкт B — короткий опис</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Резюме</h3>
+        <p>Можна додати PDF в корінь репозиторію як <code>resume.pdf</code> і посилатись тут.</p>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    (function(){
+      // ПОМІТКА: заміни пароль 'roman123' на свій
+      var pwd = prompt('Введіть пароль для доступу:');
+      if(pwd === 'refletins'){
+        document.getElementById('content').style.display = 'block';
+      } else {
+        document.body.innerHTML = '<div style="max-width:700px;margin:80px auto;font-family:Arial,sans-serif;text-align:center;padding:20px"><h2>Доступ заборонено</h2><p>Якщо потрібно отримати доступ — напишіть мені на email.</p></div>';
+      }
+    })();
+  </script>
+</body>
+</html>
